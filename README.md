@@ -33,6 +33,9 @@ curl https://raw.githubusercontent.com/ooduck/MDM-bypass/main/MDM-bypass.sh -o M
 3. Reinstall macOS from recovery.
 4. At the "Select Your Country or Region" screen, press and hold the power button until the screen goes black to shut down.
 5. Follow the installation instructions.
+
+_Optional:_  
+6. From Disk Utility, rename Data to Macintosh HD - Data.
 ## curl: (4) A requested feature, protocol or option was not found built-in in this libcurl due to a build-time decision.
 
 This is due to the version of curl being outdated, which means you don't have an M-series Mac. Therefore, this won't work for you.
