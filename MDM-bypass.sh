@@ -86,13 +86,13 @@ select opt in "${options[@]}"; do
 		if ! dscl -f "$dscl_path" localhost -list "$localUserDirPath" UniqueID | grep -q "\<$defaultUID\>"; then
 			echo -e "${CYAN}Create a new user${NC}"
 			echo -e "${CYAN}Press Enter to continue, Note: Leaving it blank will default to the automatic user${NC}"
-			echo -e "${CYAN}Enter Full Name (Default: Apple)${NC}"
+			echo -e "${CYAN}Enter Full Name (Default: Mac)${NC}"
 			read -rp "Full name: " fullName
-			fullName="${fullName:=Apple}"
+			fullName="${fullName:=Mac}"
 
-			echo -e "${CYAN}Username${NC} ${RED}WRITE WITHOUT SPACES${NC} ${GREEN}(default: Apple)${NC}"
+			echo -e "${CYAN}Username${NC} ${RED}WRITE WITHOUT SPACES${NC} ${GREEN}(default: Mac)${NC}"
 			read -rp "Username: " username
-			username="${username:=Apple}"
+			username="${username:=Mac}"
 
 			echo -e "${CYAN}Enter the User Password (default: 1234)${NC}"
 			read -rsp "Password: " userPassword
